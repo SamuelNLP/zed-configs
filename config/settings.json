@@ -1,0 +1,89 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "html": true,
+    "log": true,
+    "make": true,
+    "sql": true,
+    "toml": true,
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "base_keymap": "JetBrains",
+  "toolbar": {
+    "agent_review": false,
+  },
+  "preferred_line_length": 88,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "languages": {
+    "Python": {
+      "language_servers": [
+        // Enable ty, disable basedpyright, and enable all
+        // other registered language servers (ruff, pylsp, pyright).
+        "ty",
+        "!basedpyright",
+        "...",
+      ],
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
+      },
+      "formatter": {
+        "language_server": {
+          "name": "ruff",
+        },
+      },
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "agent": {
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 15,
+  "buffer_font_size": 12,
+  "theme": "One Light",
+  "terminal": {
+    "working_directory": "current_project_directory",
+    "detect_venv": {
+      "on": {
+        "directories": [".venv"],
+        "activate_script": "default",
+      },
+    },
+  },
+  "disable_ai": false,
+  "file_scan_exclusions": [
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.mypy_cache",
+    "**/.ruff_cache",
+    "**/.git"
+  ]
+}
