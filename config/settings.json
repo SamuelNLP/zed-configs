@@ -47,13 +47,8 @@
       },
     },
   },
-  "edit_predictions": {
-    "provider": "copilot",
-  },
   "agent": {
     "button": false,
-    "favorite_models": [],
-    "model_parameters": [],
   },
   "project_panel": {
     "dock": "left",
