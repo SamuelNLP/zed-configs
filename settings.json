@@ -73,7 +73,7 @@
       },
     },
   },
-  "disable_ai": false,
+  "disable_ai": true,
   "file_scan_exclusions": [
     "**/__pycache__",
     "**/.pytest_cache",
