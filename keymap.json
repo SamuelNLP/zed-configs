@@ -11,6 +11,8 @@
     "bindings": {
       "ctrl-p": null,
       "ctrl-t": null,
+      "shift shift": "text_finder::Toggle",
+      "ctrl-alt-p": "command_palette::Toggle",
     },
   },
 ]

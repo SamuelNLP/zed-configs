@@ -35,6 +35,8 @@
   "collaboration_panel": {
     "button": false
   },
+  "go_to_definition_fallback": "find_all_references",
+  "lsp_results_location": "picker",
   "base_keymap": "JetBrains",
   "toolbar": {
     "agent_review": false
@@ -47,13 +49,7 @@
   },
   "languages": {
     "Python": {
-      "language_servers": [
-        // Enable ty, disable basedpyright, and enable all
-        // other registered language servers (ruff, pylsp, pyright).
-        "ty",
-        "!basedpyright",
-        "..."
-      ],
+      "language_servers": ["ty", "ruff"],
       "code_actions_on_format": {
         "source.organizeImports.ruff": true
       },
