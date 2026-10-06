@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git": {
+    "blame": {
+      "show_avatar": true
+    }
+  },
   "ssh_connections": [
     {
       "host": "mealhada.local",
@@ -14,10 +19,8 @@
       "args": [],
       "projects": [
         {
-          "paths": [
-            "/home/samuel/Desktop/fractals-nutri"
-          ]
-        },
+          "paths": ["/home/samuel/Desktop/fractals-nutri"]
+        }
       ]
     }
   ],
@@ -27,20 +30,20 @@
     "log": true,
     "make": true,
     "sql": true,
-    "toml": true,
+    "toml": true
   },
   "collaboration_panel": {
     "button": false
   },
   "base_keymap": "JetBrains",
   "toolbar": {
-    "agent_review": false,
+    "agent_review": false
   },
   "preferred_line_length": 88,
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000,
-    },
+      "milliseconds": 1000
+    }
   },
   "languages": {
     "Python": {
@@ -49,43 +52,43 @@
         // other registered language servers (ruff, pylsp, pyright).
         "ty",
         "!basedpyright",
-        "...",
+        "..."
       ],
       "code_actions_on_format": {
-        "source.organizeImports.ruff": true,
+        "source.organizeImports.ruff": true
       },
       "formatter": {
         "language_server": {
-          "name": "ruff",
-        },
-      },
-    },
+          "name": "ruff"
+        }
+      }
+    }
   },
   "agent": {
-    "button": false,
+    "button": false
   },
   "project_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false,
+    "metrics": false
   },
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "icon_theme": "Zed (Default)",
-  "ui_font_size": 17,
-  "buffer_font_size": 14,
+  "ui_font_size": 15,
+  "buffer_font_size": 13,
   "theme": "One Light",
   "terminal": {
     "working_directory": "current_project_directory",
     "detect_venv": {
       "on": {
         "directories": [".venv"],
-        "activate_script": "default",
-      },
-    },
+        "activate_script": "default"
+      }
+    }
   },
   "disable_ai": true,
   "file_scan_exclusions": [
